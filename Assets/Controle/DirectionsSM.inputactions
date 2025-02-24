@@ -1,25 +1,34 @@
 {
-    "name": "DirectionsSousMarin",
+    "name": "DirectionsSM",
     "maps": [
         {
             "name": "Sous-Marin",
-            "id": "47cc21ba-a879-4053-bd43-7905bd58d1eb",
+            "id": "250426bb-70c3-4bf2-9877-896efaa977a1",
             "actions": [
                 {
                     "name": "Directions",
                     "type": "Value",
-                    "id": "4040c227-44ef-4d9a-8536-9f1f59d0865d",
-                    "expectedControlType": "Axis",
+                    "id": "c2da0b3b-5707-4004-bdae-cc8bb5c15485",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Accelerer",
+                    "type": "Button",
+                    "id": "0d836580-ba18-418b-9f9b-21b889bbd969",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press(behavior=2)",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
                 {
-                    "name": "Z axis Arrows",
-                    "id": "138144b5-610e-45b4-942f-a70cd75c015e",
-                    "path": "1DAxis",
+                    "name": "Updown WASD",
+                    "id": "d9ccf899-5cfd-42f0-96c2-6ae0c7f25d32",
+                    "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -28,97 +37,53 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "negative",
-                    "id": "5eaf2a51-40ba-414f-bc43-4e393303f2d9",
-                    "path": "<Keyboard>/downArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Clavier",
-                    "action": "Directions",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "7b83ca6a-c9ad-496d-ae59-336f0f1e200e",
-                    "path": "<Keyboard>/upArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Clavier",
-                    "action": "Directions",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "Z axis WASD",
-                    "id": "c875d202-c159-44eb-8d90-71e62533ef8d",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Directions",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "95f7f44d-295d-4629-a18c-e9c468475c46",
-                    "path": "<Keyboard>/s",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Clavier",
-                    "action": "Directions",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "9f1fd9c6-d4f5-4894-9ad3-b84dbe2dda70",
+                    "name": "Up",
+                    "id": "37852a11-bd5a-459c-971c-509c01aac718",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Clavier",
+                    "groups": "",
                     "action": "Directions",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "Y axis WASD",
-                    "id": "79e5be8f-c360-423a-a1d8-2c11f3feb319",
-                    "path": "1DAxis",
+                    "name": "Down",
+                    "id": "181b3a1f-ddd4-4307-88a5-428e5096b9a3",
+                    "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Directions",
-                    "isComposite": true,
-                    "isPartOfComposite": false
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 },
                 {
-                    "name": "positive",
-                    "id": "15233aec-549d-4fda-94c4-308ee7d6d113",
+                    "name": "Left",
+                    "id": "7fa7dd0a-3cf6-410d-9378-0d38316853af",
                     "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Clavier",
+                    "groups": "",
                     "action": "Directions",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "negative",
-                    "id": "4b48b1dd-5d90-4cac-bf03-cef6fc5bd6f3",
+                    "name": "Right",
+                    "id": "8e572e1f-a0bc-4d0b-b668-fca387301874",
                     "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Clavier",
+                    "groups": "",
                     "action": "Directions",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "Y axis Arrows",
-                    "id": "373377a9-3d0f-4dc5-ac3c-2cf4a8855c9a",
-                    "path": "1DAxis",
+                    "name": "Updown Arrows",
+                    "id": "cdb0a32b-d45e-4c71-8e60-c39565691b1c",
+                    "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -127,8 +92,8 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "positive",
-                    "id": "0f18fa81-8bfe-40b5-b44e-f75d7c6c28d3",
+                    "name": "Up",
+                    "id": "0a12f3a3-d2e2-43d5-81e5-a84297befe92",
                     "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
@@ -138,8 +103,8 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "negative",
-                    "id": "0925300c-7476-455f-8326-18d20c71a0a7",
+                    "name": "Down",
+                    "id": "195ca579-9acc-4fd6-b3b7-eb000ad5d9af",
                     "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
@@ -147,6 +112,39 @@
                     "action": "Directions",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "Left",
+                    "id": "6f3eab7c-373d-40ad-b635-a3f97047ea36",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Directions",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Right",
+                    "id": "7a288f84-9b2b-43f3-95de-2564d3c3e535",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Directions",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "a33cef9f-a853-4503-8a26-6f23abb711aa",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Clavier",
+                    "action": "Accelerer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

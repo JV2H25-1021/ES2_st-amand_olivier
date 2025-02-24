@@ -1729,6 +1729,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7165430295591806332, guid: 20c0aa25022fd474ebac164d517acaa3,
+        type: 3}
+      propertyPath: m_Drag
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8298684462619277302, guid: 20c0aa25022fd474ebac164d517acaa3,
         type: 3}
       propertyPath: m_Name
@@ -1797,7 +1802,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8298684462619277302, guid: 20c0aa25022fd474ebac164d517acaa3,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8632670369948054856}
+      addedObject: {fileID: 8632670369948054860}
   m_SourcePrefab: {fileID: 100100000, guid: 20c0aa25022fd474ebac164d517acaa3, type: 3}
 --- !u!1 &3635746710492279696 stripped
 GameObject:
@@ -1823,7 +1828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 65754027826ca534b926d0087b36f56b,
+  m_Actions: {fileID: -944628639613478452, guid: dff231fd2ecf06742a8a7cb0de3003a7,
     type: 3}
   m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
@@ -1839,10 +1844,10 @@ MonoBehaviour:
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Clavier
-  m_DefaultActionMap: Sous-Marin
+  m_DefaultActionMap: Personnage
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &8632670369948054856
+--- !u!114 &8632670369948054860
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1851,10 +1856,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3635746710492279696}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 569a72057cefb4849a428b48d9063057, type: 3}
+  m_Script: {fileID: 11500000, guid: fbfb364dd1321eb45ad18dab17a8c7f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _vitessePromenade: 0
+  _vitessePromenade: 0.5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
