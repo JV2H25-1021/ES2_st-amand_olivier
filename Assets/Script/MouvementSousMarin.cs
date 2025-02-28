@@ -53,7 +53,7 @@ public class ControleAraigneeV2 : MonoBehaviour
             // faire le changement plus graduel avec une interpolation
             rotation = Mathf.SmoothDampAngle(transform.eulerAngles.y, rotationCible, ref _rotationVelocity, 0.12f);
             // appliquer la rotation cible directement
-            _rb.MoveRotation(Quaternion.Euler(rotation, 0.0f, 0.0f));
+            _rb.MoveRotation(Quaternion.Euler(0.0f, 0.0f, 0.0f));
         }
         // appliquer la vitesse de translation
         _rb.AddForce(mouvement, ForceMode.VelocityChange);
